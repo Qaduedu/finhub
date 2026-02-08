@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>FinHub | Ferramentas financeiras rápidas</title>
+  <meta name="description" content="Calculadoras financeiras simples (juros compostos, aportes, parcelamento) e tabelas práticas. Direto ao ponto."/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container navInner">
+      <a class="brand" href="index.html" aria-label="FinHub - Página inicial">
+        <div class="logo" aria-hidden="true"></div>
+        <span>FinHub</span>
+      </a>
+      <nav class="navLinks" aria-label="Navegação principal">
+        <a class="pill" href="calculadoras.html">Calculadoras</a>
+        <a class="pill" href="tabelas.html">Tabelas</a>
+        <a class="pill" href="faq.html">FAQ</a>
+        <a class="pill" href="sobre.html">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="heroGrid">
+        <div class="card">
+          <div class="cardPad">
+            <h1 class="h1">Finanças sem enrolação.</h1>
+            <p class="p">
+              Ferramentas rápidas para simular rendimentos, parcelamentos e cenários de economia.
+              Se isso te poupar 20 minutos, já estamos ganhando.
+            </p>
+
+            <div class="kpis" role="list">
+              <div class="kpi" role="listitem"><b>Rápido</b><span>Carrega leve e roda em qualquer lugar</span></div>
+              <div class="kpi" role="listitem"><b>Útil</b><span>Simulações práticas e reutilizáveis</span></div>
+              <div class="kpi" role="listitem"><b>Sem pegadinha</b><span>Nada de pop-up ou clique forçado</span></div>
+            </div>
+
+            <div class="btnRow">
+              <a class="btn primary" href="calculadoras.html">Abrir calculadoras</a>
+              <a class="btn good" href="tabelas.html">Ver tabelas práticas</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div class="cardPad">
+            <h2 class="h2">Destaques</h2>
+            <div class="notice">
+              Dica: páginas separadas para cada ferramenta ajudam SEO e aumentam navegação interna
+              sem forçar ninguém a nada. Internet raiz.
+            </div>
+
+            <div style="height:12px"></div>
+
+            <div class="tool">
+              <h3>Juros compostos</h3>
+              <p>Simule aporte mensal e taxa para ver evolução do saldo.</p>
+              <div class="meta"><span>⏱ 30s</span><span>📌 ótima pra salvar</span></div>
+              <a class="btn" href="calc/juros-compostos.html">Abrir</a>
+            </div>
+
+            <div style="height:10px"></div>
+
+            <div class="tool">
+              <h3>Parcelamento</h3>
+              <p>Quanto você paga de juros e qual a parcela real por mês.</p>
+              <div class="meta"><span>🧾 compras</span><span>📉 clareza</span></div>
+              <a class="btn" href="calc/parcelamento.html">Abrir</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top:14px">
+      <div class="col12">
+        <div class="ad" aria-label="Espaço para anúncio">
+          <b>Slot de anúncio (topo / in-content)</b><br/>
+          Quando você colocar AdSense, esse bloco vira um slot real. Sem inventar clique. Só exibindo.
+        </div>
+      </div>
+
+      <div class="col6">
+        <div class="card"><div class="cardPad">
+          <h2 class="h2">Ferramentas</h2>
+          <p class="p">Páginas individuais por calculadora. Mais organizado, mais útil, mais indexável.</p>
+          <div class="btnRow">
+            <a class="btn" href="calc/juros-compostos.html">Juros compostos</a>
+            <a class="btn" href="calc/guardar-por-mes.html">Guardar por mês</a>
+            <a class="btn" href="calc/parcelamento.html">Parcelamento</a>
+            <a class="btn" href="calc/comparar-opcoes.html">Comparar opções</a>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="col6">
+        <div class="card"><div class="cardPad">
+          <h2 class="h2">Conteúdo prático</h2>
+          <p class="p">Tabelas que as pessoas salvam. Porque todo mundo ama uma resposta pronta.</p>
+          <div class="btnRow">
+            <a class="btn" href="tabelas.html">Tabela de evolução mensal</a>
+            <a class="btn" href="faq.html">FAQ objetivo</a>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerGrid">
+        <div>
+          <b>FinHub</b><br/>
+          <small>Ferramentas financeiras simples. Sem aconselhamento financeiro. Só cálculo.</small>
+        </div>
+        <div style="text-align:right">
+          <small>
+            <a href="privacidade.html">Privacidade</a> ·
+            <a href="termos.html">Termos</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module">
+    import { setActiveNav } from "./assets/app.js";
+    import { injectJsonLd, baseJsonLd } from "./assets/seo.js";
+    setActiveNav();
+    injectJsonLd(baseJsonLd({
+      name:"FinHub",
+      description:"Calculadoras financeiras simples e tabelas práticas.",
+      url: location.origin + location.pathname.replace(/index\.html$/,"")
+    }));
+  </script>
+</body>
+</html>

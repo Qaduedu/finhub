@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Calculadoras | FinHub</title>
+  <meta name="description" content="Calculadoras financeiras: juros compostos, guardar por mês, parcelamento e comparações."/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container navInner">
+      <a class="brand" href="index.html"><div class="logo"></div><span>FinHub</span></a>
+      <nav class="navLinks">
+        <a class="pill" href="calculadoras.html">Calculadoras</a>
+        <a class="pill" href="tabelas.html">Tabelas</a>
+        <a class="pill" href="faq.html">FAQ</a>
+        <a class="pill" href="sobre.html">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card"><div class="cardPad">
+        <h1 class="h1">Calculadoras</h1>
+        <p class="p">Cada ferramenta em uma página própria. Simples, rápido, e ótimo pra voltar depois.</p>
+      </div></div>
+    </section>
+
+    <section class="grid" style="margin-top:14px">
+      <div class="col12">
+        <div class="ad"><b>Slot de anúncio</b><br/>Topo para monetização sem atrapalhar o uso.</div>
+      </div>
+
+      <div class="col6">
+        <a class="tool" href="calc/juros-compostos.html">
+          <h3>Juros compostos com aporte</h3>
+          <p>Simule taxa, meses, aporte e saldo final. Sem drama.</p>
+          <div class="meta"><span>📌 salvar</span><span>📈 longo prazo</span></div>
+        </a>
+      </div>
+
+      <div class="col6">
+        <a class="tool" href="calc/guardar-por-mes.html">
+          <h3>Quanto guardar por mês</h3>
+          <p>Objetivo + prazo + taxa. Descubra o aporte mensal necessário.</p>
+          <div class="meta"><span>🎯 meta</span><span>🧮 simples</span></div>
+        </a>
+      </div>
+
+      <div class="col6">
+        <a class="tool" href="calc/parcelamento.html">
+          <h3>Parcelamento e juros</h3>
+          <p>Veja parcela, juros pagos e custo total da compra.</p>
+          <div class="meta"><span>🧾 compras</span><span>📉 clareza</span></div>
+        </a>
+      </div>
+
+      <div class="col6">
+        <a class="tool" href="calc/comparar-opcoes.html">
+          <h3>Comparar duas opções</h3>
+          <p>Compare taxas/retorno de duas alternativas e veja diferença no tempo.</p>
+          <div class="meta"><span>⚖️ comparar</span><span>⏱ rápido</span></div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerGrid">
+        <div><b>FinHub</b><br/><small>Ferramentas financeiras simples.</small></div>
+        <div style="text-align:right"><small><a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a></small></div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module">
+    import { setActiveNav } from "./assets/app.js";
+    setActiveNav();
+  </script>
+</body>
+</html>
